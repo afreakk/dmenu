@@ -1,2 +1,2 @@
 #!/bin/sh
-dmenu_path | dmenu "$@" | ${SHELL:-"/bin/sh"} &
+dmenu_path | dmenuhist ~/.cache/dmenu_run_hist dmenu -f -i | ${SHELL:-"/bin/sh"} &
