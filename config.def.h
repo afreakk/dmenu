@@ -17,9 +17,10 @@ static const char accent[]	= "#fabd2f";
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
 	[SchemeNorm] = { fg1, bg1 },
-	[SchemeSel] = { accent, bg2 },
+	[SchemeSel] = { bg0, accent },
 	[SchemeOut] = { fg0, bg0 },
 };
+static const unsigned int border_width = 5;
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
 
