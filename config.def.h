@@ -11,15 +11,14 @@ static const char *prompt      = NULL;      /* -p  option; prompt to the left of
 
 static const char bg0[]	= "#1d2021";
 static const char bg1[]	= "#282828";
-static const char bg2[]	= "#3c3836";
 static const char fg0[]	= "#ebdbb2";
 static const char fg1[]	= "#fbf1c7";
 static const char accent[]	= "#fabd2f";
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { fg1, bg1 },
+	[SchemeNorm] = { fg0, bg0 },
 	[SchemeSel] = { bg0, accent },
-	[SchemeOut] = { fg0, bg0 },
+	[SchemeOut] = { fg1, bg1 },
 };
 static const unsigned int border_width = 5;
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
