@@ -10,14 +10,15 @@ static const char *fonts[] = {
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 
 static const char bg0[]	= "#1d2021";
-static const char bg1[]	= "#282828";
-static const char fg0[]	= "#ebdbb2";
+static const char bg1[]	= "#665c54";
+static const char fg0[]	= "#bdae93";
 static const char fg1[]	= "#fbf1c7";
-static const char accent[]	= "#fabd2f";
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
 	[SchemeNorm] = { fg0, bg0 },
-	[SchemeSel] = { bg0, accent },
+	[SchemeNormHighlight] = { fg1, bg0 },
+	[SchemeSel] = { fg0, bg1 },
+	[SchemeSelHighlight] = { fg1, bg1 },
 	[SchemeOut] = { fg1, bg1 },
 };
 static const unsigned int border_width = 5;
